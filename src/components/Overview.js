@@ -1,5 +1,9 @@
 import React from "react";
-
+/**
+ * Component to display unordered list of task objects to user
+ * @param {*} props Array of task objects to be displayed to user
+ * @returns HTML unordered list displaying all task objs in tasks array
+ */
 const Overview = (props) => {
     const { tasks } = props;
 
