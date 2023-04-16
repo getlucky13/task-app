@@ -1,3 +1,14 @@
+# Demo Task App
+
+This project was created following allong with The Odin Projects React tutorial. While simple currently, it will be used to test functionality that will eventually make its way into the Spotify Stats Web App Project.
+
+## Necessary to Run
+To correctly deploy test build, this app requires Node.js, npm, and npx. If you don't have these installed, I followed allong with the tutorial found here (https://tubemint.com/install-nodejs-npm-npx-yarn/). 
+
+Once installed, deploy with 'npm start' in command line from project folder
+
+Information on [Create React App](https://github.com/facebook/create-react-app) can be found below.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
