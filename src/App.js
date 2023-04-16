@@ -1,11 +1,15 @@
 import React, { Component } from "react";
+import uniqid from "uniqid";
 
 class App extends Component {
   constructor() {
     super();
 
     this.state = {
-      task: { text: ''},
+      task: { 
+        text: '',
+        id: uniqid()
+      },
       tasks: [],
     };
   }
@@ -14,6 +18,7 @@ class App extends Component {
     this.setState({
       task : {
         text: e.targe.value,
+        id: this.state.task.id,
       }
     });
   };
@@ -22,7 +27,10 @@ class App extends Component {
     e.preventDefault();
     this.setState({
       tasks: this.state.tasks.concat(this.state.task),
-      task: { text: ''},
+      task: { 
+        text: '',
+      id: uniqid()
+      },
     });
   };
 
