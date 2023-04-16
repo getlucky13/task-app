@@ -16,7 +16,8 @@ class App extends Component {
     this.state = {
       task: { 
         text: '',
-        id: uniqid()
+        id: uniqid(),
+        index: 1
       },
       tasks: [],
     };
@@ -32,6 +33,7 @@ class App extends Component {
       task : {
         text: e.target.value,
         id: this.state.task.id,
+        index: this.state.task.index
       },
     });
   };
@@ -47,7 +49,8 @@ class App extends Component {
       tasks: this.state.tasks.concat(this.state.task),
       task: { 
         text: '',
-        id: uniqid()
+        id: uniqid(),
+        index: this.state.task.index + 1
       },
     });
   };
