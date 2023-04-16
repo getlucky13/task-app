@@ -10,6 +10,22 @@ class App extends Component {
     };
   }
 
+  handleChange = (e) => {
+    this.setState({
+      task : {
+        text: e.targe.value,
+      }
+    });
+  };
+
+  onSubmitTask = (e) => {
+    e.preventDefault();
+    this.setState({
+      tasks: this.state.tasks.concat(this.state.task),
+      task: { text: ''},
+    });
+  };
+
   render() {
     const {task, tasks } = this.state;
     
@@ -17,7 +33,12 @@ class App extends Component {
       <div>
         <form>
           <label htmlFor = "taskInput"> Enter task </label>
-          <input type = "text" id = "taskInput"/>
+          <input 
+            onChange={this.handleChange}
+            value={task.text}
+            type = "text" 
+            id = "taskInput"
+          />
           <button type="submit">
             Add Task
           </button>
