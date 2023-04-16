@@ -31,7 +31,7 @@ class App extends Component {
     
     return (
       <div>
-        <form>
+        <form onSubmit={this.onSubmitTask}>
           <label htmlFor = "taskInput"> Enter task </label>
           <input 
             onChange={this.handleChange}
