@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <div>
         <form>
-          <label htmlFor = "taskInput">Enter task</label>
+          <label htmlFor = "taskInput"> Enter task </label>
           <input type = "text" id = "taskInput"/>
           <button type="submit">
             Add Task
