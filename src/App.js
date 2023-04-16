@@ -20,7 +20,7 @@ class App extends Component {
       task : {
         text: e.targe.value,
         id: this.state.task.id,
-      }
+      },
     });
   };
 
@@ -30,7 +30,7 @@ class App extends Component {
       tasks: this.state.tasks.concat(this.state.task),
       task: { 
         text: '',
-      id: uniqid()
+        id: uniqid()
       },
     });
   };
@@ -48,13 +48,11 @@ class App extends Component {
             type = "text" 
             id = "taskInput"
           />
-          <button type="submit">
-            Add Task
-          </button>
+          <button type="submit"> Add Task </button>
         </form>
         <Overview tasks={tasks}/>
       </div>
-    )
+    );
   }
 }
 
